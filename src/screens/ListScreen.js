@@ -10,7 +10,7 @@ const ListScreen = ()=>{
     const uni_7 = "AUST";
     const uni_8 = "DU";
     return(
-        <view style={styles.viewStyle}>
+       <View style={styles.viewStyle}>
             <Text style={styles.textStyle}>{uni_1}</Text>
             <Text style={styles.textStyle}>{uni_2}</Text>
             <Text style={styles.textStyle}>{uni_3}</Text>
@@ -20,7 +20,8 @@ const ListScreen = ()=>{
             <Text style={styles.textStyle}>{uni_7}</Text>
             <Text style={styles.textStyle}>{uni_8}</Text>
             
-        </view>
+        </View>
+
 
     );
 };
