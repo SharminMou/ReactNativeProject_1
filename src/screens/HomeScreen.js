@@ -18,7 +18,7 @@ const HomeScreen = (props)=>{
             <TouchableOpacity 
               style={{alignSelf: "center",}}
               onPress={function () {
-                  props.navigation.navigate("List");
+                  props.navigation.navigate("ProfileScreen");
                 }}
               >
                 <Text style={styles.opacityTextStyle}>My Profile</Text>

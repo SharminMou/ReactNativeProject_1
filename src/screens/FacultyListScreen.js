@@ -1,7 +1,13 @@
 import React from "react";
 import {Text, View, StyleSheet, FlatList} from "react-native";
 const FacultyListScreen = ()=>{
-    const faculty = [{name: "Mr.X", },{name: "Mr.A", },{name: "Mr.Y", },{name: "Mr.K", },{name: "Mr.K", },];
+    const faculty = [
+        {name: "Mr.X", key:"1" },
+        {name: "Mr.A", key:"2" },
+        {name: "Mr.Y", key:"3" },
+        {name: "Mr.K", key:"4" },
+        {name: "Mr.K", key:"5" },
+    ];
     return(
         <View style={styles.viewStyle}>
             <FlatList
