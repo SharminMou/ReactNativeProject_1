@@ -37,7 +37,7 @@ const HomeScreen = (props)=>{
               <Button color='#008B8B'
                   title="List of Faculty Members"
                   onPress={function () {
-                  props.navigation.navigate("List");
+                  props.navigation.navigate("FacultyList");
                   }}
               />
           </View>
