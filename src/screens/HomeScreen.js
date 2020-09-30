@@ -18,7 +18,7 @@ const HomeScreen = (props)=>{
             <TouchableOpacity 
               style={{alignSelf: "center",}}
               onPress={function () {
-                  props.navigation.navigate("ProfileScreen");
+                  props.navigation.navigate("Profile");
                 }}
               >
                 <Text style={styles.opacityTextStyle}>My Profile</Text>
@@ -29,7 +29,7 @@ const HomeScreen = (props)=>{
               <Button color='#008B8B'
                 title="Semester Wise Course List"
                 onPress={function () {
-                props.navigation.navigate("List");
+                props.navigation.navigate("Semester");
                 }}
               />
           </View>
@@ -37,7 +37,7 @@ const HomeScreen = (props)=>{
               <Button color='#008B8B'
                   title="List of Faculty Members"
                   onPress={function () {
-                  props.navigation.navigate("FacultyList");
+                  props.navigation.navigate("Faculty");
                   }}
               />
           </View>
@@ -57,8 +57,8 @@ const styles = StyleSheet.create({
       justifyContent: "center",
     },
     logoStyle:{
-      height: 300,
-      width: 300,
+      height: 200,
+      width: 200,
       resizeMode:"contain",
     },
     opacityTextStyle:{
@@ -71,11 +71,13 @@ const styles = StyleSheet.create({
       marginTop: 10,
       padding: 10,
       width: 250,
+      borderRadius: 30,
 
     },
     buttonViewStyle:{
       marginTop: 10,
       width: 250,
+      borderRadius: 30,
 
     },
 });
