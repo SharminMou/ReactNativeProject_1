@@ -8,7 +8,7 @@ const ProfileScreen = (props)=>{
           <View style={{marginVertical: 20}}>
             <Image source={require('../../assets/profile-photo.jpg')} style={styles.logoStyle}/>
          </View>
-         <View style={{marginVertical: 18,alignItems:"center"}}>
+         <View style={styles.textViewStyle}>
           <Text style={styles.textStyle}>Name: Sharmin Naj Mou</Text>
           <Text style={styles.textStyle}>Student ID: 170042074</Text>
           <Text style={styles.textStyle}>Room no: FHR_Utility-403</Text>
@@ -21,18 +21,34 @@ const ProfileScreen = (props)=>{
 const styles = StyleSheet.create({
     rootViewStyle:{
         alignItems: "center",
-        justifyContent: "center",
+        alignSelf: "center",
+        backgroundColor: '#dbd8e3',
+        width: 500,
+        height: 700,
       },
-    textStyle:{
-        fontSize: 20,
-        color: 'black',
-        marginVertical: 10,
-    },
-    logoStyle:{
-        height: 200,
+      logoStyle:{
+        height: 320,
         width: 200,
         resizeMode:"contain",
-      },
+    },
+    textStyle:{
+        alignItems: "center",
+        justifyContent: "center",
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        fontSize: 15,
+        color: 'white',
+        borderBottomColor: "white",
+        borderBottomWidth: 2,
+        width: 300,
+    },
+    textViewStyle:{
+      alignItems: "center",
+      justifyContent: "center",
+      marginTop: 10,
+      backgroundColor: "#352f44",
+      borderRadius: 15,
+    },
 
 });
 

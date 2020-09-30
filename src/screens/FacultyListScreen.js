@@ -13,7 +13,10 @@ const FacultyListScreen = ()=>{
             <FlatList
             data = {faculty}
             renderItem = {function({item}){
-                return(<Text style={styles.textStyle}>{item.name}</Text>)
+                return( <View style={styles.textViewStyle}>
+                            <Text style={styles.textStyle}>{item.key}. {item.name}</Text>
+                        </View>
+                    )
             }}
             
             />
@@ -25,15 +28,31 @@ const FacultyListScreen = ()=>{
 };
 
 const styles = StyleSheet.create({
-    textStyle:{
-        fontSize: 30,
-        color: 'blue',
-        marginVertical: 30,
-    },
     viewStyle:{
-        borderColor: "green",
-        borderWidth: 5,
-    }
+        justifyContent: "center",
+        alignItems: "center",
+        alignSelf: "center",
+        marginTop: 100,
+        backgroundColor: '#dbd8e3',
+        width: 300,
+        
+    },
+    textStyle:{
+        fontSize: 20,
+        fontWeight: "bold",
+        color: 'white',
+        marginVertical: 17,
+    },
+    textViewStyle:{
+        justifyContent: "center",
+        alignItems: "center",
+        backgroundColor: '#352f44',
+        borderBottomWidth: 2,
+        borderColor: "white",
+        width: 300,
+
+    },
+    
 });
 
 export default FacultyListScreen;

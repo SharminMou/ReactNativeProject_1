@@ -10,14 +10,24 @@ import CourseListScreen from "./src/screens/CourseListScreen";
 const stack = createStackNavigator();
 
 function App(){
+  const homeHeadersStyle = { headerStyle: {backgroundColor: "#5c5470",},
+                        headerTintColor: "white",
+                        headerTitleStyle: {fontWeight: "bold",alignSelf: "center",},
+
+                      };
+  const headersStyle = { headerStyle: {backgroundColor: "#5c5470",},
+                        headerTintColor: "white",
+                        headerTitleStyle: {fontWeight: "bold"},
+
+                      };
   return(
     <NavigationContainer>
     <stack.Navigator initialRouteName="Home">
-      <stack.Screen name="Home" component={HomeScreen} />
-      <stack.Screen name="Semester" component={SemesterListScreen} />
-      <stack.Screen name="Faculty" component={FacultyListScreen} /> 
-      <stack.Screen name="Profile" component={ProfileScreen} />
-      <stack.Screen name="Course" component={CourseListScreen} />
+      <stack.Screen name="Home" component={HomeScreen} options={homeHeadersStyle} />
+      <stack.Screen name="Semester" component={SemesterListScreen} options={headersStyle} />
+      <stack.Screen name="Faculty" component={FacultyListScreen} options={headersStyle} /> 
+      <stack.Screen name="Profile" component={ProfileScreen} options={headersStyle} />
+      <stack.Screen name="Course" component={CourseListScreen} options={headersStyle} />
     </stack.Navigator>
     </NavigationContainer>
   );

@@ -54,7 +54,7 @@ const CourseListScreen = (props)=>{
                     data = {courseList}
                     renderItem = {courseItem =>(
                         <View style={styles.textViewStyle}>
-                            <Text style={styles.textStyle}>{courseItem.item.name}</Text>
+                            <Text style={styles.textStyle}>{courseItem.item.key}. {courseItem.item.name}</Text>
                         </View>
                     )}
                 />
@@ -62,14 +62,15 @@ const CourseListScreen = (props)=>{
           );
     }
 
-  const styles = StyleSheet.create({
+const styles = StyleSheet.create({
     viewStyle:{
         justifyContent: "center",
         alignItems: "center",
         alignSelf: "center",
-        marginTop: 100,
-        backgroundColor: '#008B8B',
-        width: 300,
+        paddingTop: 100,
+        backgroundColor: '#dbd8e3',
+        width: 500,
+        height: 700,
         
     },
     textStyle:{
@@ -83,6 +84,7 @@ const CourseListScreen = (props)=>{
         alignItems: "center",
         borderBottomWidth: 2,
         borderColor: "white",
+        backgroundColor: '#352f44',
         width: 300,
 
     },

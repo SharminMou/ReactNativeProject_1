@@ -23,26 +23,30 @@ const HomeScreen = (props)=>{
               >
                 <Text style={styles.opacityTextStyle}>My Profile</Text>
               </TouchableOpacity>
-            </View>
-          
-          <View style={styles.buttonViewStyle}>
-              <Button color='#008B8B'
-                title="Semester Wise Course List"
-                onPress={function () {
-                props.navigation.navigate("Semester");
-                }}
-              />
           </View>
-          <View style={styles.buttonViewStyle}>
-              <Button color='#008B8B'
-                  title="List of Faculty Members"
-                  onPress={function () {
+          
+          <View style={styles.opacityViewStyle}>
+            <TouchableOpacity 
+              style={{alignSelf: "center",}}
+              onPress={function () {
+                  props.navigation.navigate("Semester");
+                }}
+              >
+                <Text style={styles.opacityTextStyle}>Semester Wise Course List</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.opacityViewStyle}>
+            <TouchableOpacity 
+              style={{alignSelf: "center",}}
+              onPress={function () {
                   props.navigation.navigate("Faculty");
-                  }}
-              />
+                }}
+              >
+                <Text style={styles.opacityTextStyle}>List of Faculty Members</Text>
+            </TouchableOpacity>
           </View>
 
-        </View>
+      </View>
     );
 };
 
@@ -54,7 +58,8 @@ const styles = StyleSheet.create({
     },
     rootViewStyle:{
       alignItems: "center",
-      justifyContent: "center",
+      backgroundColor: '#dbd8e3',
+      height: 700,
     },
     logoStyle:{
       height: 200,
@@ -67,15 +72,9 @@ const styles = StyleSheet.create({
       fontWeight: "bold",
     },
     opacityViewStyle:{
-      backgroundColor:'#008B8B',
+      backgroundColor:'#2a2438',
       marginTop: 10,
       padding: 10,
-      width: 250,
-      borderRadius: 30,
-
-    },
-    buttonViewStyle:{
-      marginTop: 10,
       width: 250,
       borderRadius: 30,
 

@@ -47,9 +47,10 @@ const SemesterListScreen = (props)=>{
 
 const styles = StyleSheet.create({
     viewStyle:{
-        justifyContent: "center",
         alignItems: "center",
-        marginTop: 150,
+        backgroundColor: '#dbd8e3',
+        paddingTop: 150,
+        height: 700,
     },
     opacityTextStyle:{
         fontSize: 15,
@@ -59,7 +60,7 @@ const styles = StyleSheet.create({
     },
     
     opacityViewStyle:{
-        backgroundColor:'#008B8B',
+        backgroundColor:'#2a2438',
         marginTop: 10,
         padding: 10,
         width: 250,
