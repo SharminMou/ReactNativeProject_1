@@ -17,7 +17,7 @@ const SemesterListScreen = (props)=>{
             </View>
 
             <View style={styles.opacityViewStyle}>
-            <TouchableOpacity 
+                <TouchableOpacity 
                     style={{alignSelf: "center",}}
                     onPress={function () {
                     props.navigation.navigate("Course", {sem: "6s"});
@@ -30,13 +30,25 @@ const SemesterListScreen = (props)=>{
 
             <View style={styles.opacityViewStyle}>
                 
-            <TouchableOpacity 
+                <TouchableOpacity 
                     style={{alignSelf: "center",}}
                     onPress={function () {
                     props.navigation.navigate("Course", {sem: "7s"});
                     }}
                 >
                     <Text style={styles.opacityTextStyle}>7th Semester</Text>
+                </TouchableOpacity>
+            </View>
+
+            <View style={styles.opacityViewStyle}>
+                
+                <TouchableOpacity 
+                    style={{alignSelf: "center",}}
+                    onPress={function () {
+                    props.navigation.navigate("Course", {sem: "8s"});
+                    }}
+                >
+                    <Text style={styles.opacityTextStyle}>8th Semester</Text>
                 </TouchableOpacity>
             </View>
         </View>

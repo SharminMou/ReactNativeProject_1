@@ -18,6 +18,7 @@ const CourseListScreen = (props)=>{
                 {name: "SWE 4537", key:"3" },
                 {name: "CSE 4508", key:"4" },
                 {name: "MATH 4543", key:"5" },
+                {name: "SWE 4503", key:"6" },
             ]);
             setRendering(false);
         }
@@ -30,6 +31,7 @@ const CourseListScreen = (props)=>{
                 {name: "SWE 4637", key:"3" },
                 {name: "CSE 4608", key:"4" },
                 {name: "MATH 4643", key:"5" },
+                {name: "SWE 4603", key:"6" },
             ]);
             setRendering(false);
         }
@@ -42,10 +44,28 @@ const CourseListScreen = (props)=>{
                 {name: "SWE 4737", key:"3" },
                 {name: "CSE 4708", key:"4" },
                 {name: "MATH 4743", key:"5" },
+                {name: "SWE 4703", key:"6" },
+
             ]);
             setRendering(false);
 
         }
+        else if (sem == "8s")
+        {
+            setCourseList(courses => [
+                ...courses,
+                {name: "CSE 4801", key:"1" },
+                {name: "CSE 4802", key:"2" },
+                {name: "SWE 4837", key:"3" },
+                {name: "CSE 4808", key:"4" },
+                {name: "MATH 4843", key:"5" },
+                {name: "SWE 4803", key:"6" },
+
+            ]);
+            setRendering(false);
+
+        }
+        
     }
     console.log(courseList);
         return (

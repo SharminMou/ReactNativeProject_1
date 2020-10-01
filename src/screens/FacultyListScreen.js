@@ -6,7 +6,8 @@ const FacultyListScreen = ()=>{
         {name: "Mr.A", key:"2" },
         {name: "Mr.Y", key:"3" },
         {name: "Mr.K", key:"4" },
-        {name: "Mr.K", key:"5" },
+        {name: "Mr.Z", key:"5" },
+        {name: "Mr.D", key:"6" },
     ];
     return(
         <View style={styles.viewStyle}>

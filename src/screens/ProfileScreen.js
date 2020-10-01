@@ -11,8 +11,8 @@ const ProfileScreen = (props)=>{
          <View style={styles.textViewStyle}>
           <Text style={styles.textStyle}>Name: Sharmin Naj Mou</Text>
           <Text style={styles.textStyle}>Student ID: 170042074</Text>
-          <Text style={styles.textStyle}>Room no: FHR_Utility-403</Text>
-          <Text style={styles.textStyle}>Email: sharminnaj@iut-dhaka.edu</Text>
+          <Text style={styles.textStyle}>Room no: FHR, Utility-403</Text>
+          <Text style={styles.lastTextStyle}>Email: sharminnaj@iut-dhaka.edu</Text>
          </View>
       </View>
     );
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
         height: 700,
       },
       logoStyle:{
-        height: 320,
+        height: 310,
         width: 200,
         resizeMode:"contain",
     },
@@ -42,10 +42,19 @@ const styles = StyleSheet.create({
         borderBottomWidth: 2,
         width: 300,
     },
+    lastTextStyle:{
+      alignItems: "center",
+      justifyContent: "center",
+      paddingHorizontal: 20,
+      paddingVertical: 10,
+      fontSize: 15,
+      color: 'white',
+      width: 300,
+  },
     textViewStyle:{
       alignItems: "center",
       justifyContent: "center",
-      marginTop: 10,
+      marginTop: 5,
       backgroundColor: "#352f44",
       borderRadius: 15,
     },
